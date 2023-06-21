@@ -1,0 +1,122 @@
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+	Nenhuma citação no texto.%
+	\or
+	Citado na página #2.%
+	\else
+	Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+% Ajusta os campos da capa
+\renewcommand{\imprimircapa}{%
+	\begin{capa}%
+		\center
+		{\normalsize\imprimirinstituicao}
+		%{\ABNTEXchapterfont\normalsize\imprimirinstituicao}
+		\vspace*{\fill}
+
+		%{\ABNTEXchapterfont\normalsize\imprimirautor}
+		{\normalsize\imprimirautor}
+		
+		\vspace*{\fill}
+		%{\ABNTEXchapterfont\bfseries\normalsize\imprimirtitulo}
+		{\normalsize\imprimirtitulo}
+		
+		\vspace*{\fill}
+		{\normalsize\imprimirlocal}
+		\par
+		{\normalsize\imprimirdata}
+		\vspace*{1cm}
+		\end{capa}
+}
+
+% Ajusta os campos da contracapa
+
+\makeatletter
+\renewcommand{\folhaderostocontent}{
+	\begin{center}
+		{\normalsize\imprimirautor}
+		
+		
+		\vspace*{\fill}\vspace*{\fill}
+		{\normalsize\imprimirtitulo}
+		\vspace*{\fill}
+		
+		\abntex@ifnotempty{\imprimirpreambulo}{%
+			\hspace{.45\textwidth}
+			\begin{minipage}{.5\textwidth}
+				\SingleSpacing
+				\imprimirpreambulo
+			\end{minipage}%
+			\vspace*{\fill}
+		}%
+		
+		%{\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao
+		%		\vspace*{\fill}}}
+		
+		{\normalsize\imprimirorientadorRotulo~\imprimirorientador\par}
+		\abntex@ifnotempty{\imprimircoorientador}{%
+			{\normalsize\imprimircoorientadorRotulo~\imprimircoorientador}%
+		}%
+		\vspace*{\fill}
+		
+		{\normalsize\imprimirlocal}
+		\par
+		{\normalsize\imprimirdata}
+		\vspace*{1cm}
+		
+	\end{center}
+}
+\makeatother
+
+% Ajusta os contadores de seção para Modelo padrão do câmpus
+\counterwithout{section}{section}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+\makepagestyle{plain}
+
+
+% Ajusta o tamanho da fonte dos capítulos
+\renewcommand{\ABNTEXchapterfontsize}{
+	{\normalsize}
+}	
+
+% Ajusta o tamanho da fonte das seções
+\renewcommand{\ABNTEXsectionfontsize}{
+	{\normalsize}
+}
+
+% Ajusta o tamanho da fonte das subseções
+\renewcommand{\ABNTEXsubsectionfontsize}{
+	{\normalsize}
+}		
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+
+\lstset { %
+	language=C++,
+	backgroundcolor=\color{black!5}, % set backgroundcolor
+	basicstyle=\footnotesize,% basic font setting
+}
+
+\renewcommand{\lstlistingname}{Algoritmo}
+% --- 
+% SEUS AJUSTES DEVEM SER FEITOS ABAIXO DESSE COMENTÁRIO
+% --- 

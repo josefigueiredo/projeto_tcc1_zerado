@@ -20,6 +20,6 @@ Este template utiliza o pacote abntex2, a partir do modelo canônico, com alguma
 
 
 
-
+## RECOMENDO COMPILAR A CADA SEÇÃO CONCLUÍDA, PARA VER COMO ESTÁ FICANDO 
 
 

@@ -1,42 +1,42 @@
 % ----------------------------------------------------------
 % Introdução
 % ----------------------------------------------------------
-\chapter{Introdução}\label{ch:intro}
-Aqui vai o texto da introdução.
+\chapter[\label{ch:intro}Introdução]{Introdução}
+Aqui vai o texto da introdução.  
 
 A ABNT indica a elaboração de uma lista de ilustrações com todos os itens arrolados e designados por seu nome específico, conforme a ordem que aparecem no texto (Figura 1, Fotografia 1, Gráfico 1, Quadro 1, entre outros). Também recomenda, quando necessário, a elaboração de lista própria para cada tipo de ilustração. No entanto, não determina um número mínimo de ilustrações para tal lista específica.
 
-\section{Tema}\label{sec:tema}
+\section{\label{sec:tema}Tema}
 
 escreva aqui...
 
-\subsection{Delimitação do tema}\label{sec:deltema}
+\subsection{\label{sec:deltema}Delimitação do tema}
 Aqui vai a delimitação do tema se tiver descrito na seção~\ref{sec:tema}.
 
 
 
 
-\section{Problema}\label{sec:probPesquisa}
+\section{\label{sec:probPesquisa}Problema}
 escreva aqui...
 
-\section{Objetivo geral}\label{sec:objGeral}
+\section{\label{sec:objGeral}Objetivo geral}
 escreva aqui...
 
-\subsection{Objetivos Específicos}\label{sec:objEsp}
+\subsection{\label{sec:objEsp}Objetivos Específicos}
 \begin{enumerate}
 	\item objetivo especifico aqui...
 	\item objetivo especifico aqui...
 \end{enumerate}
 
-\section{Justificativa}\label{sec:just}
+\section{\label{sec:just}Justificativa}
 escreva aqui...
 
-\chapter{Referencial Teórico}\label{ch:ref}
+\chapter[\label{ch:ref}Referencial Teórico]{Referencial Teórico}
 aqui vai o texto do referencial teórico. 
 
 Vc deve inserir novas seções e subseções. Recomendo usar labels para todas as seções.
 
-\section{Citações}\label{sec:citacao}
+\section{\label{sec:citacao}Citações}
 
 Este parágrafo serve apenas para explicar as citações de referências. 
 
@@ -47,7 +47,7 @@ Conforme~\citeauthoronline{bourg2013physics}, o quadrado não é redondo e o cí
 Poderíamos refletir sobre a "existência de quadrados redondos e círculos quadrados"~\cite{ericson2004real}. 
 
 
-\subsection{Citação longa}\label{subsec:citacaoLonga}
+\subsection{\label{subsec:citacaoLonga}Citação longa}
 
 O texto abaixo demonstra uma citação direta com mais de 3 linhas. Segundo~\cite{ericson2004real}:
 
@@ -61,7 +61,7 @@ O texto abaixo demonstra uma citação direta com mais de 3 linhas. Segundo~\cit
 \end{citacao}
 
 
-\section{Uso de quadros para códigos}\label{sec:quadros}
+\section{\label{sec:quadros}Uso de quadros para códigos}
 
 Quadro é um espaço não afetado pelas formatações do latex. O quadro aceita apenas texto em UTF-8 (textos com caracteres especias precisam de outra solução).
 
@@ -89,7 +89,7 @@ O quadro~\ref{lst:quadro1} mostra um exemplo de referencia armazenada no arquivo
 \end{lstlisting}
 	
 
-\section{Ilustrações}\label{sec:ilustrações}
+\section{\label{sec:ilustrações}Ilustrações}
 Este parágrafo serve apenas para explicar como é inserido uma imagem. Não devem existir figuras não referenciadas no corpo do texto. A Figura~\ref{fig:figura1} mostra duas formas geométricas, enquanto a Figura~\ref{fig:figura2} mostra o diagrama de uma arquitetura imaginária de autoria própria.
 
 \begin{figure}[htb]
@@ -111,7 +111,7 @@ No campo $\backslash$caption vai a label da figura (que é única em todo texto 
 
 Observe a diferença do comando $\backslash$includegraphics nas figuras. Na Figura~\ref{fig:figura1} a imagem é configurada para ocupar toda largura da página, enquanto a Figura~\ref{fig:figura2} trabalha escala. Se escala = 1 a figura é mostrada no tamanho original, se escala = 0.5 a figura é mostrada com 50\% do seu tamanho. 
 
-\section{Trabalhos relacionados}
+\section{\label{sec:trabRelacionados}Trabalhos relacionados}
 
 O Código~\ref{lst:quadro2} apresenta um trecho de código mágico, escrito na linguagem C++.
 
@@ -125,16 +125,16 @@ O Código~\ref{lst:quadro2} apresenta um trecho de código mágico, escrito na l
 \end{lstlisting}
 
 
-\chapter{Metodologia}
+\chapter{\label{ch:metodo}Metodologia}
 escreva aqui...
 
-\section{Arquitetura}
+\section{\label{sec:arch}Arquitetura}
 escreva aqui...
 
-\section{Recursos}
-escreva aqui...
+\section{\label{sec:rec}Recursos}
+escreva aqui... 
 
-\subsection{Cronograma}
+\subsection{\label{sec:cronos}Cronograma}
 escreva aqui...
 
 As ações necessárias para a execução do projeto são:
@@ -154,8 +154,6 @@ Para utilizar as instruções pré-prontas, basta marcar com X no quadrinho dese
 \begin{verbatim}
 	1	& \multicolumn{1}{c|}{x} & \multicolumn{1}{c|}{x} & \multicolumn{1}{c|}{}....
 \end{verbatim}
-
-
 
 
 \begin{quadro}[htb]

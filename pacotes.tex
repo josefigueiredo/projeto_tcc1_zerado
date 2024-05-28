@@ -5,23 +5,30 @@
 % ---
 % Pacotes fundamentais 
 % ---
-%\usepackage[latin1]{inputenc}
-\usepackage[brazil]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}		% Codificacao do documento
 \usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{color}				% Controle das cores
+\usepackage[table]{xcolor}
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
-\usepackage{listings}
-\usepackage{xcolor}
+\usepackage{lipsum}				% para geração de dummy text
+\usepackage{diagbox}
 % ---
-
 
 % ---
 % Pacotes de citações
 % ---
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+
+% ---
+% Pacotes adicionais, usados neste documento.
+% ---
+\usepackage{listings}
+\usepackage{enumitem}							% Personalização de listas
+\usepackage{subcaption}							% Inclusão de Subfiguras e sublegendas		
+% ---
 

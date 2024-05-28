@@ -1,5 +1,10 @@
 ## Core latex/pdflatex auxiliary files:
 *.aux
+*.bbl
+*.blg
+*.idx
+*.log
+*.toc
 *.lof
 *.log
 *.lot

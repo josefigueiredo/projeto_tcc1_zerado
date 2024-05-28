@@ -1,3 +1,7 @@
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+
 % ---
 % Configurações do pacote backref
 % Usado sem a opção hyperpageref de backref
@@ -22,7 +26,7 @@
 		{\normalsize\imprimirinstituicao}
 		%{\ABNTEXchapterfont\normalsize\imprimirinstituicao}
 		\vspace*{\fill}
-
+		
 		%{\ABNTEXchapterfont\normalsize\imprimirautor}
 		{\normalsize\imprimirautor}
 		
@@ -35,7 +39,7 @@
 		\par
 		{\normalsize\imprimirdata}
 		\vspace*{1cm}
-		\end{capa}
+	\end{capa}
 }
 
 % Ajusta os campos da contracapa
@@ -60,7 +64,7 @@
 		}%
 		
 		%{\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao
-		%		\vspace*{\fill}}}
+				%		\vspace*{\fill}}}
 		
 		{\normalsize\imprimirorientadorRotulo~\imprimirorientador\par}
 		\abntex@ifnotempty{\imprimircoorientador}{%
@@ -77,13 +81,6 @@
 }
 \makeatother
 
-% Ajusta os contadores de seção para Modelo padrão do câmpus
-\counterwithout{section}{section}
-\counterwithout{figure}{chapter}
-\counterwithout{table}{chapter}
-\makepagestyle{plain}
-
-
 % Ajusta o tamanho da fonte dos capítulos
 \renewcommand{\ABNTEXchapterfontsize}{
 	{\normalsize}
@@ -91,7 +88,7 @@
 
 % Ajusta o tamanho da fonte das seções
 \renewcommand{\ABNTEXsectionfontsize}{
-	{\normalsize}
+	{\normalsize}{\fontseries{bf}}
 }
 
 % Ajusta o tamanho da fonte das subseções
@@ -99,24 +96,34 @@
 	{\normalsize}
 }		
 
+
+% ---
+% Possibilita criação de Quadros e Lista de quadros.
+% Ver https://github.com/abntex/abntex2/issues/176
+%
+\newcommand{\quadroname}{Quadro}
+\newcommand{\listofquadrosname}{Lista de quadros}
+
+\newfloat[chapter]{quadro}{loq}{\quadroname}
+\newlistof{listofquadros}{loq}{\listofquadrosname}
+\newlistentry{quadro}{loq}{0}
+
+% configurações para atender às regras da ABNT
+\setfloatadjustment{quadro}{\centering}
+\counterwithout{quadro}{chapter}
+\renewcommand{\cftquadroname}{\quadroname\space} 
+\renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
+
+\setfloatlocations{quadro}{hbtp} % Ver https://github.com/abntex/abntex2/issues/176
+% ---
+
+
 % --- 
-% Espaçamentos entre linhas e parágrafos 
-% --- 
-
-% O tamanho do parágrafo é dado por:
-\setlength{\parindent}{1.3cm}
-
-% Controle do espaçamento entre um parágrafo e outro:
-\setlength{\parskip}{0.2cm}  % tente também \onelineskip
-
-
+% Configuraçõs para Caixas de código 
+% ---
+\renewcommand{\lstlistingname}{Código}
 \lstset { %
-	language=C++,
-	backgroundcolor=\color{black!5}, % set backgroundcolor
 	basicstyle=\footnotesize,% basic font setting
 }
 
-\renewcommand{\lstlistingname}{Algoritmo}
-% --- 
-% SEUS AJUSTES DEVEM SER FEITOS ABAIXO DESSE COMENTÁRIO
-% --- 
+

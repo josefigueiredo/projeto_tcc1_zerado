@@ -137,62 +137,46 @@ escreva aqui...
 \subsection{\label{sec:cronos}Cronograma}
 escreva aqui...
 
-*** importante, conforme a ABNT o cronograma não é uma Tabela - quadro apenas quadro.
-
-O Quadro~\ref{cronograma2} mostra um formato de cronograma quinzenal, com as atividades escritas diretamente no quadro.
-
-\begin{quadro}[htb]
-	\smaller
-	\caption{\label{cronograma2}Quadro com formato de cronograma quinzenal.}	
-	\begin{tabu}{|X[c 0.25]|X[c 0.5]|X[3]|} \tabucline-
-		\textbf{Mês} 	& \textbf{Quinzena}	&	\textbf{Atividade} \\ \tabucline-
-		\multirow{2}{*}{Mar}	& 	1 a 15		& ESCREVA AQUI O QUE SERÁ FEITO \\ \tabucline{2-3}
-		& 	16 a 30		& ESCREVA AQUI O QUE SERÁ FEITO    \\ \tabucline-
-		\multirow{2}{*}{Abr}	& 	1 a 15		& ESCREVA AQUI O QUE SERÁ FEITO    \\ \tabucline{2-3}
-		& 	16 a 30		& ESCREVA AQUI O QUE SERÁ FEITO    \\ \tabucline-
-		\multirow{2}{*}{Mai}	& 	1 a 15		& ESCREVA AQUI O QUE SERÁ FEITO    \\ \tabucline{2-3}
-		& 	16 a 30		& ESCREVA AQUI O QUE SERÁ FEITO    \\ \tabucline-
-		\multirow{2}{*}{Jun}	& 	1 a 15		& ESCREVA AQUI O QUE SERÁ FEITO    \\ \tabucline{2-3}
-		& 	16 a 30		& ESCREVA AQUI O QUE SERÁ FEITO    \\ \tabucline-
-		\multirow{2}{*}{Jul}	& 	1 a 15		& ESCREVA AQUI O QUE SERÁ FEITO    \\ \tabucline{2-3}
-		& 	16 a 30		& ESCREVA AQUI O QUE SERÁ FEITO    \\ \tabucline-
-		\multirow{2}{*}{Ago}	& 	1 a 15		& ESCREVA AQUI O QUE SERÁ FEITO    \\ \tabucline{2-3}
-		& 	16 a 30		& ESCREVA AQUI O QUE SERÁ FEITO    \\ \tabucline-		
-	\end{tabu}
-\end{quadro}
-
-
-O Quadro~\ref{cronograma1} apresenta um formato semanal, do tipo Gráfico de Gantt, onde vamos marcando a semana em que determinada atividade será feita. Neste formato a atividade não vai escrita no quadro, sendo necessário ter uma lista numerada (conforme abaixo) detalhando as atividades previstas no projeto. 
-
-
 As ações necessárias para a execução do projeto são:
 \begin{enumerate}
-	\item ação 1;
-	\item ação 2;
-	\item outra ação;
+	\item A tabela a seguir é organizada de forma quinzenal;
+	\item Recomendo criar uma lista de atividades e apenas referenciar na tabela;
+	\item Esta lista pode ser usada para Nomear e explicar as atividades (ações) do projeto;
 	\item ....
-	\item última ação.
+	\item ....
+	\item ....
+	\item Apresentação do projeto à banca avaliadora.
 \end{enumerate}
 
-O Quadro~\ref{cronograma1} apresenta a distribuição das atividades planejadas em um cronograma semanal. Você pode editar diretamente no latex, criando linhas para as atividades e inserido X na posição certa. Se preferir poderá montar a tabela em um gerador de tabela em Latex como em $https://www.tablesgenerator.com/latex_tables$
+O Quadro~\ref{cronograma} apresenta a distribuição das atividades planejadas em um cronograma semanal. Para editar no modo latex, recomendo remover a quebra de linha no editor usado ou então montar a tabela em um gerador de tabela em Latex. Veja em $https://www.tablesgenerator.com/latex_tables$
 
-\begin{quadro}[htb]
-	\smaller
-	\caption{\label{cronograma1}Quadro com formato de cronograma semanal.}	
-	\begin{tabu}{|X[c 2]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|} \tabucline-
-		\rowcolor{gray} 	& \multicolumn{4}{c|}{\textbf{Mar}} & \multicolumn{4}{c|}{\textbf{Abr}}& \multicolumn{4}{c|}{\textbf{Mai}}& \multicolumn{4}{c|}{\textbf{Jun}}& \multicolumn{4}{c|}{\textbf{Jul}} 	\\ \tabucline-
-		Ação	& 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4   \\ \tabucline-
-		1	& x & x & &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &   \\ \tabucline-
-		2	&  & x & x &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &   \\ \tabucline-
-	3	&  &  & x & x  &  &  &  &  & x & x &  &  &  &  &  &  &  &  &  & \\ \tabucline-
-	\end{tabu}
-\end{quadro}
-
-Para editar no latex, basta copiar a última linha, colocar o número certo e marcar com X no quadrinho desejado. Por exemplo, vamos definir que a atividade 3 será executada nas semanas 3 e 4 de Março e novamente nas semanas 1 e 2 de Maio.  Para tanto, inserimos 'x' a direita do terceiro, quarto, décimo e décimo primeiro \&s. 
-
-Os símbolos \& precisam apenas estar em quantidade certa, sem precisar estar alinhados.
-
+Para utilizar as instruções pré-prontas, basta marcar com X no quadrinho desejado. Por exemplo, vamos definir que a atividade 1 será executada em Fevereiro, nas semanas 1 e 2. Para tanto, marcamos x no \verb*|{}| vazio, ficando assim 
 \begin{verbatim}
-	3	&  &  & x & x  &  &  &  &  &  & x & x &  &  &  &  &  &  &  &  & \\ \tabucline-
+	1	& \multicolumn{1}{c|}{x} & \multicolumn{1}{c|}{x} & \multicolumn{1}{c|}{}....
 \end{verbatim}
 
+
+\begin{quadro}[htb]
+\smaller
+\caption{\label{cronograma}Quadro apresentando o cronograma semanal previsto.}	
+\begin{tabular}{|c|cccc|cccc|cccc|cccc|cccc|cccc|}
+\rowcolor{gray}
+%linha dos meses: alterar os meses se necessário  
+	& \multicolumn{4}{c|}{\textbf{Fevereiro}} & \multicolumn{4}{c|}{\textbf{Março}} & \multicolumn{4}{|c|}{\textbf{Abril}} & \multicolumn{4}{c|}{\textbf{Maio}} & \multicolumn{4}{c}{\textbf{Junho}} & \multicolumn{4}{c}{\textbf{Julho}} \\
+%linha das semanas (cada mes tem 4 semanas)
+AÇÃO	& \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & 4 & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & 4 & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & 4 & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & 4 & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & 4 & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & 4 \\ \hline
+%linhas das atividades: Marcar X na semana em que a ação será desenvolvida	
+1	& \multicolumn{1}{c|}{x} & \multicolumn{1}{c|}{x} & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   \\ \hline
+
+2 	& \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   \\ \hline
+
+3 	& \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   \\ \hline
+
+4 	& \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   \\ \hline
+
+6 	& \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   \\ \hline
+
+7 	& \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  &   \\ \hline
+
+\end{tabular}
+\end{quadro}

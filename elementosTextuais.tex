@@ -139,11 +139,11 @@ escreva aqui...
 
 *** importante, conforme a ABNT o cronograma não é uma Tabela - quadro apenas quadro.
 
-O Quadro~\ref{cronograma2} mostra um formato de cronograma quinzenal, com as atividades escritas diretamente no quadro.
+O Quadro~\ref{cronoQuinzenal} mostra um formato de cronograma quinzenal, com as atividades escritas diretamente no quadro, já o Quadro~\ref{cronoSemanal} mostra um formato de cronograma semanal.
 
 \begin{quadro}[htb]
 	\smaller
-	\caption{\label{cronograma2}Quadro com formato de cronograma quinzenal.}	
+	\caption{\label{cronoQuinzenal}Quadro com formato de cronograma quinzenal.}	
 	\begin{tabu}{|X[c 0.25]|X[c 0.5]|X[3]|} \tabucline-
 		\textbf{Mês} 	& \textbf{Quinzena}	&	\textbf{Atividade} \\ \tabucline-
 		\multirow{2}{*}{Mar}	& 	1 a 15		& ESCREVA AQUI O QUE SERÁ FEITO \\ \tabucline{2-3}
@@ -162,8 +162,28 @@ O Quadro~\ref{cronograma2} mostra um formato de cronograma quinzenal, com as ati
 \end{quadro}
 
 
-O Quadro~\ref{cronograma1} apresenta um formato semanal, do tipo Gráfico de Gantt, onde vamos marcando a semana em que determinada atividade será feita. Neste formato a atividade não vai escrita no quadro, sendo necessário ter uma lista numerada (conforme abaixo) detalhando as atividades previstas no projeto. 
+\begin{quadro}[htb]
+	\smaller
+	\caption{\label{cronoSemanal}Quadro com formato de cronograma semanal.}	
+	\begin{tabu}{|X[c 0.25]|X[c 0.5]|X[3]|} \tabucline-
+		\textbf{Mês} 	& \textbf{Quinzena}	&	\textbf{Atividade} \\ \tabucline-
+		\multirow{4}{*}{Mar}	& 	1 		& atividades da semana  			\\ \tabucline{2-3}
+								& 	2		& atividades da semana 		    \\ \tabucline{2-3}
+								& 	3		& atividades da semana 		    \\ \tabucline{2-3}
+								& 	4		& atividades da semana 		    \\ \tabucline-
+		\multirow{4}{*}{Abr}	& 	1 		& atividades da semana  			\\ \tabucline{2-3}
+								& 	2		& atividades da semana 		    \\ \tabucline{2-3}
+								& 	3		& atividades da semana 		    \\ \tabucline{2-3}
+								& 	4		& atividades da semana 		    \\ \tabucline-
+		\multirow{4}{*}{...}	& 	1 		& atividades da semana  			\\ \tabucline{2-3}
+								& 	2		& atividades da semana 		    \\ \tabucline{2-3}
+								& 	3		& atividades da semana 		    \\ \tabucline{2-3}
+								& 	4		& atividades da semana 		    \\ \tabucline-
+	\end{tabu}
+\end{quadro}
 
+
+O Quadro~\ref{cronGantt} apresenta um cronograma no formato semanal, do tipo Gráfico de Gantt, onde vamos marcando a semana em que determinada atividade será feita. Neste formato a atividade não vai escrita no quadro, sendo necessário ter uma lista numerada (conforme abaixo) detalhando as atividades previstas no projeto. 
 
 As ações necessárias para a execução do projeto são:
 \begin{enumerate}
@@ -174,11 +194,9 @@ As ações necessárias para a execução do projeto são:
 	\item última ação.
 \end{enumerate}
 
-O Quadro~\ref{cronograma1} apresenta a distribuição das atividades planejadas em um cronograma semanal. Você pode editar diretamente no latex, criando linhas para as atividades e inserido X na posição certa. Se preferir poderá montar a tabela em um gerador de tabela em Latex como em $https://www.tablesgenerator.com/latex_tables$
-
 \begin{quadro}[htb]
 	\smaller
-	\caption{\label{cronograma1}Quadro com formato de cronograma semanal.}	
+	\caption{\label{cronGantt}Quadro com formato de cronograma semanal.}	
 	\begin{tabu}{|X[c 2]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|X[c 0.25]|} \tabucline-
 		\rowcolor{gray} 	& \multicolumn{4}{c|}{\textbf{Mar}} & \multicolumn{4}{c|}{\textbf{Abr}}& \multicolumn{4}{c|}{\textbf{Mai}}& \multicolumn{4}{c|}{\textbf{Jun}}& \multicolumn{4}{c|}{\textbf{Jul}} 	\\ \tabucline-
 		Ação	& 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4   \\ \tabucline-
